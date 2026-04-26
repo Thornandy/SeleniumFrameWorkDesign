@@ -91,7 +91,7 @@ public class BaseTest {
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(2000);
-		driver.close();
+		driver.quit();
 	}
 
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {

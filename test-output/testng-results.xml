@@ -1,47 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-25T21:18:33 IST" name="Default suite" finished-at="2026-04-25T21:18:49 IST" duration-ms="16007">
+  <suite started-at="2026-04-26T20:54:09 IST" name="Suite" finished-at="2026-04-26T20:54:53 IST" duration-ms="43702">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@c0c2f8d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.loginErrorValidation()[pri:0, instance:seleniumFrameworkDesign.Tests.ErrorValidationsTest@589da3f3]" name="loginErrorValidation" class="seleniumFrameworkDesign.Tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" name="submitOrder" class="seleniumFrameworkDesign.Tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2026-04-25T21:18:33 IST" name="Default test" finished-at="2026-04-25T21:18:49 IST" duration-ms="16007">
-      <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@c0c2f8d]" started-at="2026-04-25T21:18:33 IST" name="setUpClass" finished-at="2026-04-25T21:18:34 IST" duration-ms="762" status="PASS">
+    <test started-at="2026-04-26T20:54:09 IST" name="Error Validations Test" finished-at="2026-04-26T20:54:33 IST" duration-ms="24062">
+      <class name="seleniumFrameworkDesign.Tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumFrameworkDesign.Tests.ErrorValidationsTest@589da3f3]" started-at="2026-04-26T20:54:09 IST" name="launchApplication" finished-at="2026-04-26T20:54:14 IST" duration-ms="5109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:seleniumFrameworkDesign.Tests.ErrorValidationsTest@589da3f3]" started-at="2026-04-26T20:54:14 IST" name="loginErrorValidation" finished-at="2026-04-26T20:54:16 IST" duration-ms="1325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumFrameworkDesign.Tests.ErrorValidationsTest@589da3f3]" started-at="2026-04-26T20:54:16 IST" name="tearDown" finished-at="2026-04-26T20:54:18 IST" duration-ms="2472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumFrameworkDesign.Tests.ErrorValidationsTest@589da3f3]" started-at="2026-04-26T20:54:18 IST" name="launchApplication" finished-at="2026-04-26T20:54:22 IST" duration-ms="3351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:seleniumFrameworkDesign.Tests.ErrorValidationsTest@589da3f3]" started-at="2026-04-26T20:54:22 IST" name="productErrorValidation" finished-at="2026-04-26T20:54:31 IST" duration-ms="9074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumFrameworkDesign.Tests.ErrorValidationsTest@589da3f3]" started-at="2026-04-26T20:54:31 IST" name="tearDown" finished-at="2026-04-26T20:54:33 IST" duration-ms="2647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumFrameworkDesign.Tests.ErrorValidationsTest -->
+    </test> <!-- Error Validations Test -->
+    <test started-at="2026-04-26T20:54:09 IST" name="Submit Order Test" finished-at="2026-04-26T20:54:53 IST" duration-ms="43702">
+      <class name="seleniumFrameworkDesign.Tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:10 IST" name="launchApplication" finished-at="2026-04-26T20:54:15 IST" duration-ms="4961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:15 IST" name="submitOrder" data-provider="getData" finished-at="2026-04-26T20:54:25 IST" duration-ms="10546" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4d18b73a]]>
+                <![CDATA[{password=Luffy@65, product=ZARA COAT 3, email=luffymarco@yopmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@c0c2f8d]" started-at="2026-04-25T21:18:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-25T21:18:49 IST" duration-ms="15092" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:25 IST" name="tearDown" finished-at="2026-04-26T20:54:27 IST" duration-ms="2438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:27 IST" name="launchApplication" finished-at="2026-04-26T20:54:31 IST" duration-ms="3888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:31 IST" name="submitOrder" data-provider="getData" finished-at="2026-04-26T20:54:42 IST" duration-ms="10293" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from Ecommerce website"]]>
+                <![CDATA[{password=Zoro@0707, product=ADIDAS ORIGINAL, email=zoro@yopmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@c0c2f8d]" started-at="2026-04-25T21:18:49 IST" name="tearDownClass" finished-at="2026-04-25T21:18:49 IST" duration-ms="89" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:42 IST" name="tearDown" finished-at="2026-04-26T20:54:44 IST" duration-ms="2501" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.TestNGTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:44 IST" name="launchApplication" finished-at="2026-04-26T20:54:47 IST" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:47 IST" name="OrderHistoryTest" finished-at="2026-04-26T20:54:51 IST" depends-on-methods="seleniumFrameworkDesign.Tests.SubmitOrderTest.submitOrder" duration-ms="3572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumFrameworkDesign.Tests.SubmitOrderTest@9cb8225]" started-at="2026-04-26T20:54:51 IST" name="tearDown" finished-at="2026-04-26T20:54:53 IST" duration-ms="2406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumFrameworkDesign.Tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
 </testng-results>

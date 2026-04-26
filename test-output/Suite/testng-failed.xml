@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="seleniumFrameworkDesign.TestComponenets.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Error Validations Test(failed)">
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
     <classes>
-      <class name="seleniumFrameworkDesign.Tests.ErrorValidationsTest">
+      <class name="seleniumFrameworkDesign.Tests.SubmitOrderTest">
         <methods>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="submitOrder"/>
+          <include name="OrderHistoryTest"/>
+          <include name="submitOrder" invocation-numbers="0"/>
         </methods>
-      </class> <!-- seleniumFrameworkDesign.Tests.ErrorValidationsTest -->
+      </class> <!-- seleniumFrameworkDesign.Tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Error Validations Test(failed) -->
+  </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

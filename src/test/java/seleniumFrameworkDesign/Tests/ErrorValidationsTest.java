@@ -25,7 +25,7 @@ public class ErrorValidationsTest extends BaseTest {
 		ProductCatalogue productCatalogue;
 		CartPage cartPage;
 
-		productCatalogue = landingPage.loginApplication("luffymarco@yopmail.com", "Luffy@65");
+		productCatalogue = landingPage.loginApplication("luffymarco1@yopmail.com", "Luffy@65");
 		productCatalogue.addProductToCart(productname);
 		cartPage = productCatalogue.goToCartPage();
 		Assert.assertFalse(cartPage.verifyProductDisplayed("ZARA COAT 33"));	
